@@ -63,7 +63,8 @@ printable_desc_lines = '\n'.join(
 
 template_code = f'''{printable_desc_lines}
 from utils import get_lines
-INPUT = 'example'
+INPUT = '{next_day_folder_name}/example'
+# INPUT = '{next_day_folder_name}/input'
 
 lines = get_lines(INPUT, trim=True)
 print(lines)
